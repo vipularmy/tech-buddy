@@ -1,0 +1,127 @@
+<igx-navbar [igxToggleAction]="dropdown3" class="app-bar">
+  <igx-navbar-action>
+    <button igxButton="icon" igxRipple class="button">
+      <igx-icon>
+        dashboard
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <button igxButton="icon" igxRipple class="button">
+    <igx-icon>
+      add_circle
+    </igx-icon>
+  </button>
+  <button igxButton="icon" igxRipple class="button">
+    <igx-icon>
+      share
+    </igx-icon>
+  </button>
+  <button igxButton="icon" igxRipple class="button">
+    <igx-icon>
+      notifications
+    </igx-icon>
+  </button>
+  <button igxButton="icon" igxRipple class="button">
+    <igx-icon>
+      search
+    </igx-icon>
+  </button>
+  <button igxButton="icon" igxRipple class="button">
+    <igx-icon>
+      account_circle
+    </igx-icon>
+  </button>
+  <igx-navbar-title>
+    TECH BUDDY
+  </igx-navbar-title>
+</igx-navbar>
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <div class="row-layout group_2">
+      <div class="row-layout group_3">
+        <igx-avatar initials="FP" [roundShape]="true" class="avatar"></igx-avatar>
+        <h6 class="h6">
+          E-MMS CONSOLE
+        </h6>
+        <button igxButton="icon" igxRipple [igxToggleAction]="dropdown4">
+          <igx-icon>
+            keyboard_arrow_down
+          </igx-icon>
+        </button>
+        <igx-drop-down #dropdown4 class="dropdown">
+          <igx-drop-down-item [isHeader]="true">
+            Projects
+          </igx-drop-down-item>
+          <igx-drop-down-item>
+            Fintech Project
+          </igx-drop-down-item>
+          <igx-drop-down-item>
+            Project Name 1
+          </igx-drop-down-item>
+          <igx-drop-down-item>
+            Project Name 2
+          </igx-drop-down-item>
+          <igx-drop-down-item>
+            Project Name 3
+          </igx-drop-down-item>
+        </igx-drop-down>
+      </div>
+      <igx-buttongroup class="button-group">
+        <button igxButton="flat" igxRipple routerLink="/master-view11/list-view11">
+          <igx-icon>
+            format_list_bulleted
+          </igx-icon>
+          <p>List</p>
+        </button>
+      </igx-buttongroup>
+    </div>
+    <igx-navbar class="navbar">
+      <igx-navbar-title>
+        AC SNAGS
+      </igx-navbar-title>
+    </igx-navbar>
+    <igx-navbar class="navbar_1">
+      <igx-navbar-title>
+        ACC/INC
+      </igx-navbar-title>
+    </igx-navbar>
+    <igx-navbar class="navbar_2">
+      <igx-navbar-title>
+        SNAG TROUBLESHOOTING
+      </igx-navbar-title>
+    </igx-navbar>
+    <igx-navbar class="navbar_3">
+      <igx-navbar-title>
+        IMMOLS GATEWAY
+      </igx-navbar-title>
+    </igx-navbar>
+    <igx-navbar class="navbar_4">
+      <igx-navbar-title>
+        PARAMETERS
+      </igx-navbar-title>
+    </igx-navbar>
+    <igx-navbar class="navbar_5">
+      <igx-navbar-title>
+        SERVICING DATA
+      </igx-navbar-title>
+    </igx-navbar>
+    <button igxButton="icon" igxRipple *ngFor="let item of northwindCategories" class="button_1">
+      <igx-icon>
+        email
+      </igx-icon>
+    </button>
+    <h3 class="h3">
+      Z-5999
+    </h3>
+    <igx-input-group type="border" class="ig-typography__body-1 textarea">
+      <label igxLabel>CHAT WITH TECH BUDDY</label>
+      <textarea igxInput></textarea>
+    </igx-input-group>
+    <img src="/assets/Avatar7.png" class="image" />
+  </div>
+</div>
+<igx-drop-down #dropdown3 class="dropdown">
+  <igx-drop-down-item>
+    Option
+  </igx-drop-down-item>
+</igx-drop-down>
